@@ -1,8 +1,6 @@
 'use strict';
 
-app.factory('Book', function($resource) {
-	// return $resource('http://localhost:3000/books');
-
+app.factory('Book', function() {
 	var Book = {
 		query: function() {
 			return [
@@ -10,7 +8,7 @@ app.factory('Book', function($resource) {
 				{ title: '1984', year: '1948' }
 			];
 		}
-	}
+	};
 
 	return Book;
 });
