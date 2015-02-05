@@ -1,7 +1,11 @@
 <h1>These are all the books</h1>
 
-<ul>
+<!-- <ul>
 	<li ng-repeat="book in books">
 		{{ book.title }}, {{ book.year }}
 	</li>
-</ul>
+</ul> -->
+
+<books>
+	<book ng-repeat="book in books" title="book.title" year="book.year"></book>
+</books>
